@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+     height: 100vh;
+    background-color: #4492F4; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.finger1{
+    padding: 0 0 30px 0;
+    width: 70px;
+    height: 200px;
+    border-radius: 25px;
+    background-color: #fff;
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation-name: move1 ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: var(--delay);
+}
+
+
+
+.finger2{
+    width: 70px;
+    height: 230px;
+    padding: 0 0 30px 0;
+    border-radius: 25px;
+    background-color: #fff;
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation-name: move2 ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+     animation-delay: var(--delay);
+}
+
+
+.finger3{
+    width: 70px;
+    height: 250px;
+    padding: 0 0 30px 0;
+    border-radius: 25px;
+    background-color: #fff;
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation-name: move3 ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+     animation-delay: var(--delay);
+}
+
+
+
+.finger4{
+    width: 70px;
+    height: 220px;
+    padding: 0 0 30px 0;
+    border-radius: 25px;
+    background-color: #fff;
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation-name: move4 ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+     animation-delay: var(--delay);
+}
+
+.finger5{
+    width: 90px;
+    height: 70px;
+    border-radius: 0 17px 90% 0;
+    background-color: #fff;
+     display: flex;
+    flex-wrap: wrap;
+    position:relative;
+    justify-content: center;
+    animation-name: move4 ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+     animation-delay: var(--delay);
+    &::after{
+        content: "";
+        width:70px;
+        height: 70px;
+        border-radius: 0;
+        background-color:#ffffff;
+        position: absolute;
+        top: -70px;
+        left: 0px;
+        
+    }
+    &::before{
+        content: "";
+        width:70px;
+        height: 70px;
+        border-radius: 0 0 0 60%;
+        background-color:#4492F4;
+        position: absolute;
+        top: -70px;
+        left: 0;
+        z-index: 10;
+        
+    }
+}
+
+
+
+//in
+.fin1{
+    background-color: #4492F4;
+    width: 35px;
+    height: 8px;
+    margin:0px 10px 0 ;
+
+}
+.fin2{
+    background-color: #4492F4;
+    width: 35px;
+    height: 8px;
+    margin-top: 3px;
+margin-left:10px ;
+}
+.fin3{
+    background-color: #4492F4;
+    width: 50px;
+    height: 50px;
+    margin-top: 90px; 
+    border-radius: 50% 50% 15px 15px;
+}
+.fin31{
+    background-color: #4492F4;
+    width: 50px;
+    height: 50px;
+    margin-top: 120px; 
+    border-radius: 50% 50% 15px 15px;
+}
+// end in 
+
+
+
+@keyframes move1 {
+    from{
+transform: translateY(0) rotateX(40deg);
+
+    }
+    to{
+transform: translateY(30px);
+ padding: 20px 0 0 0;
+    }
+}
+
+
+@keyframes move2 {
+    from{
+transform: translateY(0) rotateX(40deg);
+    }
+    to{
+transform: translateY(30px);
+ padding: 20px 0 0 0;
+    }
+}
+
+
+@keyframes move3 {
+    from{
+transform: translateY(0) rotateX(40deg);
+    }
+    to{
+transform: translateY(30px);
+ padding: 20px 0 0 0;
+    }
+}
+
+
+@keyframes move4 {
+    from{
+transform: translateY(0) rotateX(40deg);
+    }
+    to{
+transform: translateY(30px);
+ padding: 20px 0 0 0;
+    }
+}
+
+
+
+@keyframes move5 {
+    from{
+transform: translateY(0) ;
+    }
+    to{
+transform: translateY(30px)rotateZ(-90deg) ;
+    }
+}
